@@ -1,0 +1,73 @@
+/*CSS DOCUMENT*/
+
+
+img {
+    width: 100%;
+}
+
+body {
+    background: #C5D0D9;
+}
+
+h1 {
+    font-family: serif; 
+    font-size: 2.5em;
+    text-align: center;
+    color: #8C7D64; 
+    margin-top: 2em;
+}
+
+h2 {
+    font-family: serif; 
+    font-size: 1.5em;
+    text-align: center;
+    color: #72808C;
+    text-transform:uppercase;
+    margin-bottom: 3em;
+}
+
+h3 {
+    font-family: serif;
+    font-size: 1.25em;
+    color: #72808C;
+    text-transform: uppercase;
+}
+
+ul {
+    font-family: sans-serif;
+    line-height: 1.3em;
+}
+
+ol {
+    font-family: sans-serif;
+    line-height: 1.3em; 
+}
+
+div.introimage {
+    float: left;
+    width: 25%;
+    margin: 3em;
+}
+
+div.maincontent {
+    float: left;
+    width: 55%;
+    margin: 1em 2em 5em 2em;
+}
+
+.intro p {
+    padding-top: 3em;
+    margin: 2em 3em 1em 3em;
+    font-size: 1.35em;
+    line-height: 1.3em;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align:center;
+    background-color: white;
+    font-size: 1.2em;
+}
