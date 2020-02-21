@@ -1,0 +1,43 @@
+/*CSS DOCUMENT */
+
+img {
+    width: 100%;
+}
+
+.sushikokkulogo {
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mainmenu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mainmenu li {
+    float: left;
+    margin-right: 2em;
+    text-transform: uppercase;
+    padding-bottom: 2em;
+}
+
+.appetizers, .entrees {
+    clear: both;
+}
+
+.appetizers ul, .entrees ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sanluisobispo, .pasorobles, .pismobeach {
+    margin: 1em 0em;
+}
+
+.sanluisobispo ul, .pasorobles ul, .pismobeach ul {
+    list-style-type: none;
+    padding: 0;
+}
