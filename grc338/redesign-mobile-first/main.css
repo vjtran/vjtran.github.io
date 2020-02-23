@@ -4,31 +4,58 @@ img {
     width: 100%;
 }
 
+body {
+    
+}
+
 .sushikokkulogo {
-    width: 70%;
+    width: 65%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 1em;
-    padding: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
 }
 
 a {
     text-decoration: none;
 }
 
+.mainmenu a {
+    text-decoration:underline;
+    list-style-type: none;
+    color: #ffffff;
+}
+
 .mainmenu ul {
     list-style-type: none;
     padding: 0;
+    background-color: #000000;
 }
 
 .mainmenu li {
-    float:left;
-    margin-right: 1em;
+    display:block; 
     text-transform: uppercase;
-    padding-bottom: 1em;
+    padding: 0.5em;
     text-align: center;
+    border-style: solid;
+    border-color: #ffffff;
 }
+
+.hours {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.5em;
+}
+
+.hours h3 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 0.5em;
+    border-bottom-style: solid;
+}
+
 
 .appetizers, .entrees {
     clear: both;
