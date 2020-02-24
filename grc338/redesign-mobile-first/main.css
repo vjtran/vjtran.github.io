@@ -4,33 +4,31 @@ img {
     width: 100%;
 }
 
-body {
-    
-}
-
 .sushikokkulogo {
-    width: 65%;
+    width: 55%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding-top: 1.5em;
-    padding-bottom: 1em;
 }
 
-a {
-    text-decoration: none;
+a:link {
+    color: #000000;
+}
+
+a:visited {
+    color: #BFAB9F;
 }
 
 .mainmenu a {
-    text-decoration:underline;
     list-style-type: none;
     color: #ffffff;
 }
 
 .mainmenu ul {
-    list-style-type: none;
     padding: 0;
     background-color: #000000;
+    margin-bottom: 0.5em;
 }
 
 .mainmenu li {
@@ -42,10 +40,15 @@ a {
     border-color: #ffffff;
 }
 
+.slogan h4 {
+    text-align: center;
+    margin-top: 0;
+}
 .hours {
     background-color: #000000;
     color: #ffffff;
-    padding: 0.5em;
+    padding: 1em;
+    margin-top: 0.5em;
 }
 
 .hours h3 {
@@ -53,25 +56,67 @@ a {
     text-align: center;
     margin: 0;
     padding-bottom: 0.5em;
-    border-bottom-style: solid;
+    border-bottom: 2px solid; 
 }
 
+table {
+    text-align: right;
+    margin:auto;
+}
 
-.appetizers, .entrees {
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+}
+
+.appetizers, .entrees, .locations {
+    padding: 0.5em;
+}
+
+.salad p, .salad h4, .sides p, .sides h4, .specials p, .specials h4, .nigiri p, .nigiri h4, .bowls p, .bowls h4, .combinations p, .combinations h4, .sanluisobispo p, .sanluisobispo h4, .pasorobles p, .pasorobles h4, .pismobeach p, .pismobeach h4{
+    margin: 0.5em 0em;
+}
+
+.salad h4, .sides h4, .specials h4, .bowls h4, .combinations h4, .nigiri h4, .sanluisobispo h4, .pasorobles h4, .pismobeach h4 {
+    border-bottom: 1px solid;
+}
+
+.salad h3, .sides h3, .specials h3, .bowls h3, .nigiri h3, .combinations h3 {
+    text-transform: uppercase; 
+}
+
+.price {
+    margin: 0;
+    padding-bottom: 1em;
+    font-weight: bold; 
+}
+
+.appetizers ul, .entrees ul, .sanluisobispo ul, .pasorobles ul, .pismobeach ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sanluisobispo, .pasorobles, .pismobeach, footer {
+    margin-left: auto; 
+    margin-right:auto;
     clear: both;
 }
 
-.appetizers ul, .entrees ul {
-    list-style-type: none;
-    padding: 0;
+.sanluisobispo a, .pasorobles a, .pismobeach a{
+    float: left;
+    padding: 0 1em 1.5em 0; 
 }
 
-.sanluisobispo, .pasorobles, .pismobeach {
-    margin: 2em 0em;
-    
+.order {
+    float: left; 
+    padding-right: 0.5em;
+    font-weight: bold;
 }
 
-.sanluisobispo ul, .pasorobles ul, .pismobeach ul {
-    list-style-type: none;
-    padding: 0;
+footer {
+    text-align: center;
+    margin: auto;
+    padding-top: 1em;
 }
