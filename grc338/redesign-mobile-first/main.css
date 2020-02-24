@@ -101,7 +101,7 @@ h2 {
 .sanluisobispo, .pasorobles, .pismobeach, footer {
     margin-left: auto; 
     margin-right:auto;
-    clear: both;
+    clear: left;
 }
 
 .sanluisobispo a, .pasorobles a, .pismobeach a{
