@@ -4,6 +4,10 @@ img {
     width: 100%;
 }
 
+body {
+    font-family: 'Antic';
+}
+
 .sushikokkulogo {
     width: 55%;
     display: block;
@@ -38,6 +42,7 @@ a:visited {
     text-align: center;
     border-style: solid;
     border-color: #ffffff;
+    font-family: 'Yeseva One'
 }
 
 .slogan h4 {
@@ -49,6 +54,7 @@ a:visited {
     color: #ffffff;
     padding: 1em;
     margin-top: 0.5em;
+    font-family: 'Yeseva One';
 }
 
 .hours h3 {
@@ -69,6 +75,7 @@ h2 {
     text-align: center;
     border-bottom: 2px solid;
     border-top: 2px solid;
+    font-family: 'Yeseva One'; 
 }
 
 .appetizers, .entrees, .locations {
@@ -85,12 +92,14 @@ h2 {
 
 .salad h3, .sides h3, .specials h3, .bowls h3, .nigiri h3, .combinations h3 {
     text-transform: uppercase; 
+    font-family: 'Yeseva One';
 }
 
 .price {
     margin: 0;
     padding-bottom: 1em;
     font-weight: bold; 
+    
 }
 
 .appetizers ul, .entrees ul, .sanluisobispo ul, .pasorobles ul, .pismobeach ul {
@@ -119,4 +128,5 @@ footer {
     text-align: center;
     margin: auto;
     padding-top: 1em;
+    font-family: 'Yeseva One';
 }
