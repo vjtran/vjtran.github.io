@@ -20,6 +20,10 @@ a:link {
     color: #000000;
 }
 
+a:hover {
+    color: #BFAB9F;
+}
+
 a:visited {
     color: #BFAB9F;
 }
@@ -28,6 +32,7 @@ a:visited {
     list-style-type: none;
     color: #ffffff;
 }
+
 
 .mainmenu ul {
     padding: 0;
