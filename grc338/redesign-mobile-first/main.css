@@ -100,8 +100,12 @@ h2 {
     margin: 0;
     padding-bottom: 1em;
     font-weight: bold; 
-    
 }
+
+.googlemap {
+    margin-left: auto;
+    margin-right:auto;
+    width: 50%;
 
 .appetizers ul, .entrees ul, .sanluisobispo ul, .pasorobles ul, .pismobeach ul {
     list-style-type: none;
