@@ -104,7 +104,7 @@ h2 {
 
 .googlemaps {
     margin: 0;
-    width: 50%;
+    max-width: 20em;
 }
 
 .appetizers ul, .entrees ul, .sanluisobispo ul, .pasorobles ul, .pismobeach ul {
