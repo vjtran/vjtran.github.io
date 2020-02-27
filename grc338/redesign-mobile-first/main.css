@@ -102,7 +102,7 @@ h2 {
     font-weight: bold; 
 }
 
-iframe {
+.googlemaps {
     margin:0;
     max-width: 12em;
     border-style: none;
