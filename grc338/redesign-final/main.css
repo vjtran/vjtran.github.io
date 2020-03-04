@@ -118,6 +118,13 @@ h2 {
 .googlemaps {
     margin:0;
     text-align: center;
+    padding-bottom: 2em;
+}
+
+.googlemaps iframe{
+    width: 100%;
+    height: 100%;
+    border-style: none;
 }
 
 .appetizers ul, .entrees ul, .sanluisobispo ul, .pasorobles ul, .pismobeach ul {
@@ -176,19 +183,16 @@ h5{
   .sushikokkulogo{
     width: 35%;
     }
-  .appetizers {
-      
-    }
 }
 
 @media only screen and (min-width: 40em){
-  .sushikokkulogo{
-    width: 25%;
-    }
   .salad img, .sides img, .specials img, .nigiri img, .bowls img, .combinations img{
     width: 40%; 
     float: left;
     padding-top: 1em; 
+    }
+  .bowls img{
+    padding-top: 2em;
     }
   .salad ul, .salad h3, .sides ul, .sides h3, .specials ul, .specials h3, .nigiri ul, .nigiri h3, .bowls ul, .bowls h3, .combinations ul, .combinations h3{
     float: left;
@@ -203,12 +207,23 @@ h5{
     padding-top: 0.8em;
     font-size: 1.2em;
     }
+    .bowls h3{
+        padding-top: 1.7em;
+    }
   .salad, .sides, .specials, .nigiri, .bowls, .combinations{
     clear: left;
     }
-    .sanluisobispo, .pismobeach, .pasorobles{
-        display: inline-block;
-        width: 27%;
-        padding: 1em;
+  .sanluisobispo, .pismobeach, .pasorobles{
+    display: inline-block;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 29%;
+    padding: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 50em){
+  .sushikokkulogo{
+    max-width: 25em;
     }
 }
