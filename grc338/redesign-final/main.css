@@ -1,0 +1,214 @@
+/*CSS DOCUMENT */
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Antic';
+}
+
+.sushikokkulogo {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.5em;
+}
+
+a:link {
+    color: #000000;
+}
+
+a:visited {
+    color: #BFAB9F;
+}
+
+a:hover{
+    color:#BFAB9F;
+}
+
+.mainmenu a {
+    list-style-type: none;
+    color: #ffffff;
+    text-decoration: none;
+}
+.mainmenu a:hover{
+    color:#BFAB9F;
+}
+
+.mainmenu ul {
+    padding: 0;
+    background-color: #000000;
+    margin-bottom: 0.5em;
+}
+
+.mainmenu li {
+    display:block; 
+    text-transform: uppercase;
+    padding: 0.5em;
+    text-align: center;
+    border-style: solid;
+    border-color: #ffffff;
+    font-family: 'Yeseva One';
+}
+
+.slogan h4 {
+    text-align: center;
+    margin-top: 0;
+}
+.hours {
+    color: ;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    font-family: 'Yeseva One';
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.hours h3 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid;
+}
+
+td.hours {
+    padding-left: 1em;
+}
+
+table {
+    text-align: right;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid;
+    border-top: 2px solid;
+    font-family: 'Yeseva One'; 
+}
+
+.appetizers, .entrees, .locations {
+    padding: 0.5em;
+}
+
+.salad p, .salad h4, .sides p, .sides h4, .specials p, .specials h4, .nigiri p, .nigiri h4, .bowls p, .bowls h4, .combinations p, .combinations h4, .sanluisobispo h4, .sanluisobispo p, .pasorobles h4, .pasorobles p, .pismobeach h4, .pismobeach p{
+    margin: 0.5em 0em;
+}
+
+.salad h4, .sides h4, .specials h4, .bowls h4, .combinations h4, .nigiri h4, .sanluisobispo h4, .pasorobles h4, .pismobeach h4 {
+    border-bottom: 1px solid;
+}
+
+.salad h3, .sides h3, .specials h3, .bowls h3, .nigiri h3, .combinations h3 {
+    text-transform: uppercase; 
+    font-family: 'Yeseva One';
+}
+
+.price {
+    margin: 0;
+    padding-bottom: 1em;
+    font-weight: bold;
+}
+
+.googlemaps {
+    margin:0;
+    text-align: center;
+}
+
+.appetizers ul, .entrees ul, .sanluisobispo ul, .pasorobles ul, .pismobeach ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sanluisobispo, .sanluisobispo p, .pasorobles, .pasorobles p, .pismobeach, .pismobeach p, footer {
+    margin-left: auto; 
+    margin-right:auto;
+    clear: left;
+}
+
+.sanluisobispo a, .pasorobles a, .pismobeach a{
+    float: left;
+    padding: 0 1em 1.5em 0; 
+}
+
+.order {
+    float: left; 
+    padding-right: 0.5em;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    margin:0;
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+    font-family: 'Yeseva One';
+}
+
+h5{
+    margin: 0;
+}
+
+@media only screen and (min-width: 30em){
+  .mainmenu li {
+    display: inline-block;
+    border: none;
+    margin:0;
+    }
+  .mainmenu {
+    background-color: #000000;
+    overflow: hidden;
+    padding: 0;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0.7em;
+    }
+  .mainmenu ul {
+    text-align: center;
+    margin: 0;
+    }
+  .sushikokkulogo{
+    width: 35%;
+    }
+  .appetizers {
+      
+    }
+}
+
+@media only screen and (min-width: 40em){
+  .sushikokkulogo{
+    width: 25%;
+    }
+  .salad img, .sides img, .specials img, .nigiri img, .bowls img, .combinations img{
+    width: 40%; 
+    float: left;
+    padding-top: 1em; 
+    }
+  .salad ul, .salad h3, .sides ul, .sides h3, .specials ul, .specials h3, .nigiri ul, .nigiri h3, .bowls ul, .bowls h3, .combinations ul, .combinations h3{
+    float: left;
+    width: 50%;
+    padding-left: 1em;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    }
+  .salad h3, .sides h3, .specials h3, .nigiri h3, .bowls h3, .combinations h3{
+    margin: 0;
+    padding-top: 0.8em;
+    font-size: 1.2em;
+    }
+  .salad, .sides, .specials, .nigiri, .bowls, .combinations{
+    clear: left;
+    }
+    .sanluisobispo, .pismobeach, .pasorobles{
+        display: inline-block;
+        width: 27%;
+        padding: 1em;
+    }
+}
