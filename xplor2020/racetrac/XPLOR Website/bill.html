@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>RaceTrac Communications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link href="https://fonts.googleapis.com/css?family=Cantarell:400,400i,700&display=swap" rel="stylesheet"> 
+    
+    
+    
+    <script src="https://kit.fontawesome.com/d0b8b62b75.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    
+    <div class="header">
+        <a href="index.html"><img src="logo-final.png" alt="RaceTrac Logo."></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fas fa-bars" alt="Menu Icon."></i>
+        </a>
+        <div id="menu">
+            <ul>
+                <li><a href="accountinfo.html">My Account</a></li>
+                <li><a href="landing.html">My Bills</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="index.html">Sign Out</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <div class="profile">
+
+        <a href="accountinfo.html"><img src="images/profile.png" alt="Profile Icon."></a>
+        <div class="info">
+            <h2>Sharon Morris</h2><p>8345-78-555-5555555</p>
+        </div>
+    </div>
+    
+        <div class="table">
+            <h1>Your Bill</h1>
+            <p class="head">Current Balance</p><p class="head-total">$163.32</p>
+            <p class="column-1 important row-2">Current Pay Period</p><p class="column-2 important row-2">Due  4/24/2020</p>
+            <p class="column-1 row-1">RaceTrac TV</p><p class="column-2 row-1">77.79</p>
+            <p class="column-1 row-2">RaceTrac Internet</p><p class="column-2 row-2">48.99</p>
+            <p class="column-1 row-1">RaceTrac Voice</p><p class="column-2 row-1">19.99</p>
+            <p class="column-1 row-2">Other Charges</p><p class="column-2 row-2">6.05</p>
+            <p class="column-1 row-1">One-Time Charges</p><p class="column-2 row-1">5.99</p>
+            <p class="column-1 row-2">Partial Month Charges</p><p class="column-2 row-2">4.51</p>
+            <p class="column-1 important row-1">Bill Adjustments</p><p class="column-2 important row-1">-4.99</p>
+            <p class="column-1 important row-2">Total due</p><p class="column-2 important row-2">$158.33</p>
+        </div>
+    <div class="buttons">
+    
+        <button class="cancel"  onclick="location.href='breakdown.html'">Bill details</button>
+        <button class="confirm"  onclick="location.href='pay.html'">Pay my bill</button>
+        
+    </div>
+    
+    <div class="footer">
+        <div class="contact">
+            <h2>Connect With Us!</h2>
+            <i class="fas fa-phone phone" alt="Phone."></i><p>855-232-7223</p>
+            <div class="social">
+                <a href="https://www.facebook.com/RaceTrac">
+                    <i class="fab fa-facebook-square" alt="Facebook."></i>
+                </a>
+                <a href="https://www.instagram.com/racetrac/">
+                    <i class="fab fa-instagram-square" alt="Instagram."></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="location">
+            <h2>Mailing and Office Locations</h2>
+            <div class="column">
+                <h3>Mailing Address</h3>
+                <p>RaceTrac Communications<br>
+                PO Box 790086<br>
+                Saint Louis, MO 63179-0086</p>
+                <h3>Office and Support Center</h3>
+                <p>RaceTrac Communications<br>
+                8413 Excelsior Dr<br>
+                Madison, WI 53717</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Reference for menu code: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar -->
+    
+    <script>
+        function myFunction() {
+          var x = document.getElementById("menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+    
+</body>
+</html>

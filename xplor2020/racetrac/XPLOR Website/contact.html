@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>RaceTrac Communications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link href="https://fonts.googleapis.com/css?family=Cantarell:400,400i,700&display=swap" rel="stylesheet"> 
+    
+    
+    
+    <script src="https://kit.fontawesome.com/d0b8b62b75.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    
+    <div class="header">
+        <a href="index.html"><img src="logo-final.png" alt="RaceTrac Logo."></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fas fa-bars" alt="Menu Icon."></i>
+        </a>
+        <div id="menu">
+            <ul>
+                <li><a href="login.html">My Account</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    
+    <!-- Content goes here! -->
+    
+    <div class="contactinfo">
+    <div class="content">
+        
+        <div class="header">
+        <h1>Contact Us</h1>
+        <p>Have questions? The RaceTrac Communications' team is here to help.</p>
+        </div>
+            
+        <div class="chat">
+        <h3>Chat with RaceTrac</h3>
+        <p>24/7 assistance for any questions you may have.</p>
+        <div class="buttons">
+            <button class="confirm"  onclick="location.href='chat.html'">Ask Now</button>
+        </div>
+        </div>
+        
+        <div class="schedule">
+        <h3>Talk to a Specialist</h3>
+        <p>Speak one-on-one with a specialist.</p>
+        <div class="buttons">
+            <button class="confirm"  onclick="location.href='schedule.html'">Schedule A Call</button>
+        </div>
+        </div>  
+        
+        <div class="store">
+        <h3>Find a RaceTrac Communications Location</h3>
+        <p>Visit a location.</p>
+        <div class="buttons">
+            <button class="confirm"  onclick="location.href='location.html'">Store Locator</button>
+        </div>
+        </div>
+            
+    </div>
+    </div>
+    
+    <!-- End of content! -->
+    
+    
+    <div class="footer">
+        <div class="contact">
+            <h2>Connect With Us!</h2>
+            <i class="fas fa-phone phone" alt="Phone."></i><p>855-232-7223</p>
+            <div class="social">
+                <a href="https://www.facebook.com/RaceTrac">
+                    <i class="fab fa-facebook-square" alt="Facebook."></i>
+                </a>
+                <a href="https://www.instagram.com/racetrac/">
+                    <i class="fab fa-instagram-square" alt="Instagram."></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="location">
+            <h2>Mailing and Office Locations</h2>
+            <div class="column">
+                <h3>Mailing Address</h3>
+                <p>RaceTrac Communications<br>
+                PO Box 790086<br>
+                Saint Louis, MO 63179-0086</p>
+                <h3>Office and Support Center</h3>
+                <p>RaceTrac Communications<br>
+                8413 Excelsior Dr<br>
+                Madison, WI 53717</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Reference for menu code: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar -->
+    
+    <script>
+        function myFunction() {
+          var x = document.getElementById("menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+    
+</body>
+</html>

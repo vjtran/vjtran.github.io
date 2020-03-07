@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>RaceTrac Communications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link href="https://fonts.googleapis.com/css?family=Cantarell:400,400i,700&display=swap" rel="stylesheet"> 
+    
+    
+    
+    <script src="https://kit.fontawesome.com/d0b8b62b75.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    
+    <div class="header">
+        <a href="index.html"><img src="logo-final.png" alt="RaceTrac Logo."></a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fas fa-bars" alt="Menu Icon."></i>
+        </a>
+        <div id="menu">
+            <ul>
+                <li><a href="accountinfo.html">My Account</a></li>
+                <li><a href="landing.html">My Bills</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="index.html">Sign Out</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <div class="profile">
+
+        <img src="images/profile.png" alt="Profile Icon.">
+        <div class="info">
+            <h2>Sharon Morris</h2><p>8345-78-555-5555555</p>
+        </div>
+    </div>
+    
+    <div class="content" style="width: 90vw;">
+        <h1>Current Bill Details</h1>
+        <p>The following is a breakdown of your current bill, due on <b>4/24/2020</b>. If you have any questions, please feel free to <a href="contact.html">contact us</a> and we will happily support you!</p>
+        
+        <button class="accordion"><p class="title">RaceTrac Voice</p><div class="total"><p>$19.99</p><p class="expand"><i class="fas fa-angle-down"></i></p></div></button>
+            <div class="panel">
+                <div class="table">
+                    <p class="column-1 row-2">Phone Number</p><p class="column-2 row-2">29.99</p>
+                    <p class="column-1 important row-1">Bundle Discount</p><p class="column-2 important row-1">-10.00</p>
+                    <p class="column-1 important row-2">Total</p><p class="column-2 important row-2">$19.99</p> 
+                </div>
+                <p class="detail">Package includes phone line, modem, 18 calling features, and unlimited calling to USA, Puerto Rico, US Virgin Islands, Guam, and Mexico.</p>
+            </div>
+        
+        <button class="accordion"><p class="title">RaceTrac TV</p><div class="total"><p>$77.99</p><p class="expand"><i class="fas fa-angle-down"></i></p></div></button>
+            <div class="panel">
+                <div class="table">
+                    <p class="column-1 row-2">RaceTrac Silver TV Package</p><p class="column-2 row-2">84.99</p>
+                    <p class="column-1 row-1">2 RaceTrac Receivers</p><p class="column-2 row-1">9.98</p>
+                    <p class="column-1 row-2">Misc. Fees</p><p class="column-2 row-2">7.82</p>
+                    <p class="column-1 important row-1">Promotional Discount</p><p class="column-2 important row-1">-25.00</p>
+                    <p class="column-1 important row-2">Total</p><p class="column-2 important row-2">$77.79</p> 
+                </div>
+                <p class="detail">*Fees include FCC admin, franchise, and municipal PEG access fees.</p>
+            </div>
+        
+            <button class="accordion"><p class="title">RaceTrac Internet</p><div class="total"><p>$48.99</p><p class="expand"><i class="fas fa-angle-down"></i></p></div></button>
+            <div class="panel">
+                <div class="table">
+                    <p class="column-1 row-2">RaceTrac Internet & WiFi</p><p class="column-2 row-2">58.99</p>
+                    <p class="column-1 row-1">Bundle & Promotional Discounts</p><p class="column-2 row-1">-10.00</p>
+                    <p class="column-1 important row-2">Total</p><p class="column-2 important row-2">$48.99</p>
+                </div>
+            </div>
+        
+            <button class="accordion"><p class="title">Adjustments</p><div class="total"><p>-$4.99</p><p class="expand"><i class="fas fa-angle-down"></i></p></div></button>
+            <div class="panel">
+                <div class="table">
+                    <p class="column-1 important row-2">Service Change</p><p class="column-2 important row-2">-$4.99</p>
+                </div>
+                <p class="detail">Adjustments reflect subtractions from balance.</p>
+            </div>
+        
+            <button class="accordion"><p class="title">One-Time Charges</p><div class="total"><p>$5.99</p><p class="expand"><i class="fas fa-angle-down"></i></p></div></button>
+            <div class="panel">
+                <div class="table">
+                    <p class="column-1 important row-2">The Boss (HD)</p><p class="column-2 important row-2">$5.99</p>
+                    
+                </div>
+                <p class="subpoint row-1">Movie Rental on 3/14 at 8:08 P.M.</p>
+                
+                <p class="detail">One-time charges reflect movie rentals and other one-time service charges. If you have any questions or would like to contest any issues, we encourage you to <a href="contact.html">contact us</a>!</p>
+            </div>
+            <div class="buttons">
+                <button class="cancel"  onclick="location.href='landing.html'">Return to Bill Statements</button>
+                <button class="confirm"  onclick="location.href='pay.html'">Pay My Bill</button>
+            </div>
+    </div>
+    
+        
+    
+    <!-- Script and accordion assets based on https://www.w3schools.com/howto/howto_js_accordion.asp -->
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+    
+    
+    <div class="footer">
+        <div class="contact">
+            <h2>Connect With Us!</h2>
+            <i class="fas fa-phone phone" alt="Phone."></i><p>855-232-7223</p>
+            <div class="social">
+                <a href="https://www.facebook.com/RaceTrac">
+                    <i class="fab fa-facebook-square" alt="Facebook."></i>
+                </a>
+                <a href="https://www.instagram.com/racetrac/">
+                    <i class="fab fa-instagram-square" alt="Instagram."></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="location">
+            <h2>Mailing and Office Locations</h2>
+            <div class="column">
+                <h3>Mailing Address</h3>
+                <p>RaceTrac Communications<br>
+                PO Box 790086<br>
+                Saint Louis, MO 63179-0086</p>
+                <h3>Office and Support Center</h3>
+                <p>RaceTrac Communications<br>
+                8413 Excelsior Dr<br>
+                Madison, WI 53717</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Reference for menu code: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar -->
+    
+    <script>
+        function myFunction() {
+          var x = document.getElementById("menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+    
+</body>
+</html>
