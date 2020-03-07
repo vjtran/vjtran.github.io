@@ -1,0 +1,970 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}    
+
+/* End reset */
+
+/* Type */
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 1em;
+    line-height: 120%;
+    margin-bottom: .75em;
+}
+
+em {
+    font-style: italic;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-bottom: .4em;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: .25em;
+}
+
+h4 {
+    font-size: 1.1em;
+    margin-bottom: .25em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+a {
+    color: #b296c1;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .5s;
+    line-height: 1.2;
+}
+
+b {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+a:hover {
+    color: #510c76;
+}
+
+/* Index Content */
+
+.fullpage {
+    display: inline-block;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+.imgoverlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: none;
+    opacity: .5;
+    z-index: 1;
+}
+
+.fullpage img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+}
+
+.fullpage h1 {
+    position: absolute;
+    width: 100%;
+    display: block;
+    top: 50%;
+    left: 0;
+    text-align: center;
+    z-index: 2;
+    padding: 0 0.5em;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 2.25em;
+}
+
+.indicator {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-origin: center;
+    transform: translate(-50%,0);
+    height: 5em;
+    width: 3em;
+    text-align: center;
+    color: #ffffff !important;
+    border-radius: .5em .5em 0 0;
+    padding-top: .5em;
+    z-index: 2;
+}
+
+.indicator a {
+    color: #ffffff;
+    font-size: 4em;
+}
+
+.index-content {
+    display: inline-block;
+    position: relative;
+    margin: 0.75em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 90vh;
+}
+
+.index-content h1{
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+.index-content p{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 0 1em;
+}
+
+/* Login */
+
+.form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+.form button {
+    float: none;
+    display: inline-block;
+    width: 100%;
+    right: 0;
+    padding: 0.2em;
+}
+
+.signin h1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+    text-align: center;
+}
+
+.signin {
+    text-align: center;
+}
+
+.signin h3{
+    text-align: left;
+    
+}
+
+input[type=text] {
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 8px solid #b296c1;
+    font-size: 1.25em;
+    color: #8c8c8c;
+    outline: none;
+    padding: 4px 0px 4px 0;
+    margin-bottom: 24px;
+    transition: 0.5s;
+    -webkit-appearance: none;
+    border-radius: 0;
+    background-color: #f5f5f5;
+}
+
+
+input[type=text]:focus {
+    border: none;
+    border-bottom: 8px solid #510c76;
+}
+
+/* Bill stuff */
+
+.table {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    padding: 0.5em;
+    max-width: 1000px;
+}
+
+.table p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.head, .head-total{
+    background-color: #b296c1;
+    padding: .75em;
+    font-weight: bold;
+}
+
+.head {
+    grid-column: 1;
+}
+
+.head-total {
+    grid-column: 2;
+    text-align: right;
+}
+
+.column-1 {
+    grid-column: 1;
+    display: grid;
+    width: 40%;
+    padding: .25em 1em;
+}
+
+.column-2 {
+    grid-column: 2;
+    display: grid;
+    padding: .25em 1em;
+    text-align: right;
+}
+
+.row-1 {
+    background-color: #d9d9d9;
+    height: 100%;
+    width: 100%;
+}
+
+.row-2 {
+    background-color: #f5f5f5;
+    height: 100%;
+    width: 100%;
+}
+
+.table .cancel {
+    margin-left: 0;
+}
+.table .confirm {
+    margin-right: 0;
+}
+
+.important {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.accordion {
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5em;
+    margin: 0.1em;
+    width: 90vw;
+    border: 2px solid;
+    border-color: #510c76;
+    text-align: left;
+    outline: none;
+    font-size: 1.1em;
+    transition: 0.4s;
+    display: inline-block;
+    max-width: 1000px;
+}
+
+.title {
+	float: left;
+    margin: 0;
+}
+
+.total {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+.total p {
+    float: left;
+    margin: 0;
+}
+
+.subpoint {
+    padding-left: 2em;
+    padding-right: 1em;
+    width: 100%;
+}
+
+.expand {
+    margin-left: 1.5em !important;
+    color: #000000;
+    font-weight: bold;
+}
+
+.detail {
+    position: relative;
+    display: inline-block;
+    grid: none;
+    grid-column: none;
+    padding: 0.5em;
+    font-style: italic;
+}
+
+.active, .accordion:hover {
+    background-color: #510c76;
+    color: #ffffff;
+}
+
+.panel .table {
+    padding: 0;
+}
+
+.panel {
+    padding: 0;
+    width: 90vw;
+    max-width: 1000px;
+    display: none;
+    background-color: #f5f5f5;
+    overflow: hidden;
+}
+
+.buttons {
+    display: absolute;
+    width: 100%;
+    text-align: center;
+    max-width: 100em;
+}
+
+button {
+    font-family: 'Cantarell', sans-serif;;
+}
+
+.confirm{
+    font-size: 1.3em;
+    color: #000000;
+    background-color: #b296c1;
+    border-radius: .25em;
+    padding: .2em;
+    margin: 1em;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 40%;
+}
+
+.confirm:hover {
+    background-color: #510c76;
+    color: #ffffff;
+}
+
+.cancel {
+    font-size: 1.3em;
+    color: #ffffff;
+    background-color: #595959;
+    border-radius: .25em;
+    padding: .2em;
+    margin-top: .25em;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 40%;
+}
+
+.cancel:hover {
+    background-color: #262626;
+}
+
+/* Global Content */
+
+.profile {
+    display: inline-block;
+    padding: 0.75em;
+    width: 100%;
+}
+
+.profile img {
+    display: block;
+    width: 4.25em;
+    float: left;
+    margin: 0 .5em .5em 0;
+}
+
+.profile .info{
+    float: left;
+    margin: .4em 0 .25em;
+}
+
+.info p{
+    font-style: italic;
+}
+
+.info h1{
+    margin-bottom: 0.2em;
+}
+
+.profile h2 {
+    color: #510c76;
+}
+
+img {
+    max-width: 100%;
+}
+
+.content /* Content wrapper */ {
+    display: inline-block;
+    position: relative;
+    margin: 0.75em;
+}
+
+.content img /* Content wrapper */ {
+    margin: 0 0 1em;
+}
+
+.content ul p /* Content wrapper */ {
+    margin-bottom: .25em;
+}
+
+.content li /* Content wrapper */ {
+    margin-left: 1em;
+}
+
+.paycontent {
+    float: left;
+    width: 58%;
+    padding-left: 1em;
+}
+
+.paysummary{
+    padding-top: 1em;
+    float: right;
+    width: 39%;
+}
+
+.accountinfo, .paymentinfo{
+    width: 100%;
+}
+
+.accountinfo h2, .paymentinfo h2{
+    padding-bottom: 1em;
+    background-color: #b296c1;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.paymentinfo h2{
+    margin-top: 1em;
+}
+
+.accountinfo a, .paymentinfo a{
+    text-decoration: underline;
+    padding-left: 0;
+}
+
+.accountinfo p, .paymentinfo p{
+    padding-left: 1.5em;
+    text-align: left;
+}
+
+.accountinfo h4, .paymentinfo h4{
+    text-align: left;
+}
+
+.accountinfo table, .paymentinfo table{
+    width: 100%;
+    text-align: center;
+    margin-left: 0.2em;
+    border-collapse: collapse;
+}
+
+.accountinfo th, .accountinfo td, .paymentinfo th, .paymentinfo td {
+    padding: 0.3em 0;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em 1em 1em 0.5em;
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    margin-bottom: 1em;
+}
+
+.header img {
+    width: 60%;
+    max-width: 10em;
+}
+
+.header ul {
+    position: relative;
+    width: 100%;
+    right: 0;
+    top: 0;
+    transform: translate(0,0);
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+}
+
+.header li {
+    position: relative;
+    float: none;
+    width: 50%;
+    margin: 1em auto;
+}
+
+.header li a {
+    font-size: 1.25em;
+    text-transform: uppercase;
+}
+
+.index li a, .index a.icon{
+    color: #ffffff;
+}
+
+/* hamburger menu */
+/* Reference for menu code: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar */
+
+.header #menu {
+    display: none;
+}
+
+.header a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 1em 0.5em 0.5em 0;
+    font-size: 1.75em;
+}
+
+.footer {
+    position: relative;
+    margin-top: 1em;
+    width: 100%;
+    left: 0;
+    background-color: #595a5a;
+    padding: 1em 1em;
+    z-index: 10;
+    color: #ffffff;
+    clear:left;
+}
+
+/*Contact Us*/
+
+.contactinfo{
+    text-align: center;
+    padding: 1em 0;
+}
+
+.chat, .schedule, .store {
+    float: left;
+    margin-left: auto;
+    margin-right:auto;
+    width: 30.5%;
+    height: 10em;
+    padding: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0.8em;
+    box-shadow: 3px 3px 1px 0.2px rgba(0, 0, 0, 0.2);
+}
+
+.chat button, .schedule button, .store button{
+    width: 100%;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.schedule button{
+    margin-top: 1em;
+}
+
+/* Footer */ .location {
+    width: 100%;
+    display: inline-block;
+    margin-top: 1em;
+    text-align: center;
+}
+
+/* Footer */ .contact {
+    text-align: center;
+    height: 100%;
+    text-align: center;
+}
+
+/* Footer */ .phone {
+    font-size: 1em;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Footer */ .contact p {
+    display: inline-block;
+    margin-left: .5em;
+    text-align: center;
+    
+}
+
+/* Footer */ .social i {
+    font-size: 2em;
+    margin: 0 .25em;
+    text-align: center;
+}
+
+i {
+    margin: .25em 0;
+}
+
+.nav {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.nav-50 {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 1em 0 2em 0;
+}
+
+.nav-50 h1 {
+    padding: .5em .5em 0;
+}
+
+.overlay {
+    position: absolute;
+    padding: inherit;
+    font-size: 1.5em;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(178,150,193,0);
+    transition: .5s;
+}
+
+.overlay:hover {
+    background-color: rgba(178,150,193,0.30);
+}
+
+.links {
+    position: relative;
+    float: left;
+    width: 23em;
+    height: 23em;
+    padding: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #510c76; 
+    margin: 1em;
+    box-shadow: 3px 3px 1px 0.2px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.nav-50 .links {
+    position: relative;
+    float: left;
+    width: 30%;
+    height: 12em;
+    padding: .5em;
+}
+
+.links .text {
+    position: relative;
+    width: 100%;
+    display: block;
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 600px;
+    color: #000000;
+    padding: 1em;
+}
+
+.links img {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+
+
+/* Mobile breakpoint */
+
+@media only screen and (max-width: 720px) {
+    
+    /* Text format stuff */
+    p {
+        line-height: 150%;
+        font-size: 1em;
+        margin-bottom: 1em;
+    }
+    
+    /* Global stuff */
+    .header img {
+        max-width: 30%;
+        margin: inherit auto;
+        display: inline-block;
+    }
+    
+    .profile img {
+        margin-bottom: 0;
+    }
+    
+    .location h2{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .links /* Part of the .nav wrapper */ {
+        width: 18em;
+        height: 18em;
+        margin-bottom: 1em;
+        
+    }
+    
+    .nav-50 .links {
+        width: 95% !important;
+        margin-bottom: 1em;
+    }
+    
+    .nav-50{
+        padding-bottom: 1em;
+    }
+    
+    .overlay /* Part of the .nav wrapper */ {
+        top: 0;
+        left: 0;
+    }
+        
+    .footer {
+        clear: both;
+    }
+    
+    .accordion{
+        background: none;
+    }
+    
+    .active, .accordion:hover {
+    background-color: #510c76;
+    color: #ffffff;
+    }
+    
+    /* .table {
+        padding: 0 .5em;
+    }
+    
+    .column-1, .column-2 {
+        width: 45%;
+    } */
+    
+    /* Index stuff */
+    .index-content {
+        margin: .25em;
+        margin-top: 85vh;
+    }
+    
+    .fullpage h1 {
+        padding: 0 0.5em;
+        top: 40%;
+        font-size: 2em;
+        line-height: 120%;
+    }
+    
+    /* Login stuff */
+    input[type=text] {
+        width: 100%;
+        font-size: 1em;
+    }
+    
+    .form button {
+        width: 100%;
+    }
+    
+    .form {
+        width: 65%;
+    }
+    
+    .signin h3{
+        font-size: 1.1em;
+    }
+    
+    /* Bill stuff */
+    .total {
+        float: left;
+        width: 40%;
+        padding-left: 1em;
+    }
+    
+    .expand {
+        right: 1em;
+        transform: translate(0,-50%);
+        position: absolute;
+        padding-top: 1.5em;
+    }
+    
+    .confirm{
+        width: 100%;
+        display: inline-block;
+        margin-left: auto;
+        margin-right:auto;
+    }
+    
+    .cancel{
+        width: 100%;
+        display: inline-block;
+        margin-left: auto;
+        margin-top: 1em;
+    }
+    
+    .paycontent, .paysummary, .form{
+        clear:left;
+        width:100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /*Account Info*/
+    
+    .accountinfo, .accountinfo table, .accountinfo th, .accountinfo td, .paymentinfo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .accountinfo h4, .paymentinfo h4{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        margin-top: 1em;
+    }
+    
+    .accountinfo p, .paymentinfo p{
+        padding-left:0;
+        text-align: left;
+        margin-bottom: 0;
+    }
+    
+    .accountinfo h2, .paymentinfo h2{
+        font-size: 1em;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 0;
+        margin:0;
+        padding: 0.5em 2em;
+    }
+    
+    .paymentinfo h2{
+        margin-top: 2em;
+    }
+    
+    /*Landing Page*/
+    .landingcontainer{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .landingcontainer content, .landingcontainer p{
+        margin-bottom: 0;
+    }
+    
+    .landingcontainer button{
+        margin:0;
+    }
+    
+    /*Contact Us*/
+    .chat, .schedule, .store {
+       clear:left; 
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
