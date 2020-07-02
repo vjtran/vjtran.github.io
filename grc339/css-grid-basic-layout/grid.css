@@ -20,12 +20,12 @@ header {
 }
 
 article {
-    grid-column: ;
+    grid-column: 1/2;
     padding-right: 1em;
 }
 
 aside {
-    grid-column: ;
+    grid-column: 2/3;
 }
 
 footer {
