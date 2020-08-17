@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title id="title">Home</title>
+    <title id="title">Lessons</title>
     <link rel="icon" type="image/png" href="images/icon.png" />
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://use.typekit.net/mxf2awh.css">
@@ -23,11 +23,17 @@
         </ul>
     </header>
     
-        <div class="intro-image"> <!--Intro Image-->
-            <img src="images/bg.jpg" alt="Cup of tea and teapot on a table with plants in a room">
-            <div class="bottom-left"></div>
-                <h3>Welcome</h3>
-        </div>   
+    <div id="wrap"> <!--Tea Cup Animation-->
+        <div id="steam" class="steam-one"></div>
+        <div id="steam" class="steam-two"></div>
+        <div id="steam" class="steam-three"></div>
+        <div id="steam" class="steam-four"></div>
+        <div class="cup">
+            <div class="handle"></div>
+            <div class="saucer"></div>
+        </div>
+    </div>
+        <div id="button" class="button" onclick="pageRedirect()">begin lessons</div>
     
     <footer>
         <h4>&copy; T Co. // est. 2020 </h4>
@@ -35,6 +41,6 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>    
-    
+
 </body>
 </html>
