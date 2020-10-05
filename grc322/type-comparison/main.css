@@ -1,0 +1,107 @@
+h1, h2, h3, h4, p, ul, ol, li {
+    margin: 0; 
+    padding:0; 
+    font-size: 1em; 
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 1.7em;
+    padding: 0.5em 0 0;
+}
+
+h3 {
+    font-size: 1.4em;
+    padding-top: 1em;
+    padding-bottom: 0.2em;
+    font-weight: bold;
+    color: #7A6F51;
+}
+
+h4 {
+    font-size: 1.1em;
+    padding-top: 0.5em;
+    font-weight: bold;
+}
+
+p {
+    margin: 0.5em auto;
+}
+
+body {
+    margin: 1em auto;
+    max-width: 40em;
+    background: #E3DBCC;
+    color: #3B3A38;
+    font-family: yrsa, serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+div.container-history, div.container-comparison, div.container-references {
+    padding: 1em;
+    background: #F9F6EE;
+    margin: 1em;
+}
+
+img {
+    width: 100%;
+}
+
+.photo-container h4, .container-comparison h4 {
+    margin: 1em 0 0.5em;
+}
+
+
+/* photo galleries */
+main {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: calc(56% + 1em);
+}
+
+figure{
+    margin: 0;
+    width: calc(100%-2em);
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+figcaption {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0.5em 0;
+    color: #7A6F51;
+}
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8),
+input:nth-of-type(9):checked ~ main figure:nth-of-type(9),
+input:nth-of-type(10):checked ~ main figure:nth-of-type(10),
+input:nth-of-type(11):checked ~ main figure:nth-of-type(11){
+    opacity: 1;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0 0.5em;
+}
+
+input {
+    display: none;
+}
+
+/* photo container for visual references */
+
+.photo-container img{
+    width: 49%;
+    margin: 0.5em auto;
+}
